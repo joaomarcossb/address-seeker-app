@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    width: 100vw;
+    height: 100vh;
+}
+
+.App {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1 {
+    color: #fff;
+    padding: 0px 40px;
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cep-box {
+    width: 60%;
+    height: 70px;
+    min-width: 300px;
+    padding: 5px 10px;
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(255,255,255,0.2);
+}
+
+.cep-text {
+    width: 80%;
+    background-color: transparent;
+    font: 600 1.5rem system-ui;
+    letter-spacing: 4px;
+    outline: none;
+    border-style: none;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+}
+
+.cep-text::placeholder {
+    font-weight: normal;
+}
+
+.cep-btn {
+    border-style: none;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.cep-btn:hover {
+    transform: scale(1.2);
+}
+
+.data-box {
+    text-align: center;
+    color: #fff;
+}
+
+.data-box h2 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.data-box p {
+    line-height: 2rem;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 600px) {
+    body {
+        height: 90vh;
+    }
+    .App h1 {
+        font-size: 2.3rem;
+    }
+}
